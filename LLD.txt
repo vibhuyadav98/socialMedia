@@ -1,0 +1,87 @@
+Considering a project which will have multiple functionalities
+
+* Modules of the project
+
+1. User Management
+
+    This module will be responsible for all the user related functionalities like 
+    -   User creation 
+    -   Fetch User
+    -   Fetch All User
+    -   User Details Updating 
+    -   User Deletion 
+    -   User Deactivation 
+    -   User Activation 
+    -   User login 
+    -   User logout
+
+    The component Structure of the module will be as:
+
+        - Controllers: `userController.ts` , `authenticationController`
+
+        - Services: `userService.ts` , `authenticationService.ts` , `(Any3rdpartyAuthenticationService).ts` 
+
+        - Models: `userModel.ts`
+        
+        - Routes: `routes.ts`
+        
+        - Validators: `userValidator.ts`
+
+        - utils:  `publisher.ts` , `consumer.ts`, `passwordhasher.ts` , `tokenGenerator.ts` 
+
+        - responseHandler: `successHandler` , `errorHandler.ts`
+
+
+2. Follower Management
+
+    This module will be responsible for managing the follow/unfollow functionality between users.
+
+    The component Structure of the module will be as:
+    
+        - Controllers: `followController.ts`
+
+        - Services: followService.ts`
+
+        - Models: `followModel.ts` 
+
+        - Routes: `routes.ts` 
+
+        - Validators: `followValidator.ts` 
+
+        - ResponseHandler: `successHandler.ts` ,  `errorHandler.ts`
+
+3. Post Management
+
+    This module will be responsible for managing the creation, updating, deletion, and retrieval of posts.
+
+    The component Structure of the module will be as:
+    
+        - Controllers: `postController.ts`
+
+        - Services: postService.ts`
+
+        - Models: `postModel.ts` 
+
+        - Routes: `routes.ts` 
+
+        - Validators: `postValidator.ts` 
+
+        - ResponseHandler: `successHandler.ts` ,  `errorHandler.ts`
+
+4. Like and comment Management
+
+    This module will be responsible for managing the likes and comments on posts on posts.
+
+    The component Structure of the module will be as:
+    
+        - Controllers: `likeController.ts` , `commentController.ts`
+
+        - Services: `likeService.ts`, `commentService.ts`
+
+        - Models: `likeModel.ts` , `commentModel.ts`
+
+        - Routes: `routes.ts` 
+
+        - Validators: `likeValidator.ts`, `commentValidator.ts` 
+
+        - ResponseHandler: `successHandler.ts` ,  `errorHandler.ts`
